@@ -1,0 +1,8 @@
+<!---title:Linux(Ubuntu)环境下搭建Foolduino(Arduino)开发环境教程-->
+<!---keywords:-->
+<!---date:2018.08.26; modification:2018.08.26-->
+
+
+
+
+<!-- vim:set tw=0:-->
