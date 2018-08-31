@@ -1,8 +1,18 @@
 <!---title:Linux(Ubuntu)环境下搭建Foolduino(Arduino)开发环境教程-->
 <!---keywords:-->
-<!---date:2018.08.26; modification:2018.08.26-->
+<!---date:2018.08.26; modification:2018.08.31-->
 
+# 下载IDE软件包
 
+可以到官网下载最新包. 地址: [https://www.arduino.cc/en/Main/Software](https://www.arduino.cc/en/Main/Software)
+
+如果背墙或者其他原因造成无法下载, 也可以在本站下载:
+
+[linux64位IDE](../../../res/download/arduino-1.8.6-linux64.tar.xz)
+
+[linux32位IDE](../../../res/download/arduino-1.8.6-linux32.tar.xz)
+
+[linux armIDE](../../../res/download/arduino-1.8.6-linuxarm.tar.xz)
 
 
 <!-- vim:set tw=0:-->
