@@ -1,5 +1,5 @@
 <!---title:Linux(Ubuntu)环境下搭建Foolduino(Arduino)开发环境教程-->
-<!---keywords:-->
+<!---keywords:arduino,foolduino,ide,maker,创客,linux-->
 <!---date:2018.08.26; modification:2018.09.02-->
 
 # 下载IDE软件包

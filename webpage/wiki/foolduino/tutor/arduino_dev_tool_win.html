@@ -11,8 +11,8 @@
 <link rel="stylesheet" href="/style.css" type="text/css" />
 
 
-<title>Linux(Ubuntu)环境下搭建Foolduino(Arduino)开发环境教程</title>
-<meta name="keywords" content="arduino,foolduino,ide,maker,创客,linux">
+<title>Windows环境下搭建Foolduino(Arduino)开发环境教程</title>
+<meta name="keywords" content="arduino,foolduino,ide,maker,创客,windows">
 
 </head>
 
@@ -24,8 +24,8 @@
     <p class="header_titleline">Foolduino知识库</p>
     <p class="header_subline"><a href="/index.html">首页</a></p>
 </div>
-<h1>Linux(Ubuntu)环境下搭建Foolduino(Arduino)开发环境教程</h1>
-<p>date: 2018.08.26; modification:2018.09.02</p>
+<h1>Windows环境下搭建Foolduino(Arduino)开发环境教程</h1>
+<p>date: 2018.09.02; modification:2018.09.02</p>
 
  <!--if(title)-->
 
@@ -38,24 +38,51 @@
 </div>
  <!--if(toc)-->
 
-<!---title:Linux(Ubuntu)环境下搭建Foolduino(Arduino)开发环境教程-->
-<!---keywords:arduino,foolduino,ide,maker,创客,linux-->
-<!---date:2018.08.26; modification:2018.09.02-->
+<!---title:Windows环境下搭建Foolduino(Arduino)开发环境教程-->
+<!---keywords:arduino,foolduino,ide,maker,创客,windows-->
+<!---date:2018.09.02; modification:2018.09.02-->
 <h1 id="下载ide软件包"><span class="header-section-number">1</span> 下载IDE软件包</h1>
 <p>可以到官网下载最新包. 地址: <a href="https://www.arduino.cc/en/Main/Software" class="uri">https://www.arduino.cc/en/Main/Software</a></p>
 <p>如果背墙或者其他原因造成无法下载, 也可以在本站下载:</p>
-<p><a href="../../../res/download/arduino-1.8.6-linux64.tar.xz">linux64位IDE</a></p>
-<p><a href="../../../res/download/arduino-1.8.6-linux32.tar.xz">linux32位IDE</a></p>
-<p><a href="../../../res/download/arduino-1.8.6-linuxarm.tar.xz">linux armIDE</a></p>
+<p>Windows下的arduino IDE安装包: <a href="../../../res/download/arduino-1.8.6-windows.exe">arduino-1.8.6-windows.exe</a></p>
 <h1 id="安装"><span class="header-section-number">2</span> 安装</h1>
-<p>此处以64位linux为例.</p>
-<p>将下载下来的 arduino-1.8.6-linux64.tar.xz 解压到某个目录(随意指定). 例如:</p>
-<pre><code>mkdir ~/bin/
-cd ~/bin
-tar ~/arduino-1.8.6-linux64.tar.xz  # 此时在~/bin 下应该可以看到 arduino-1.8.6 文件夹
-cd ~/bin/arduino-1.8.6
-ls -lh     # 此时应该能看到类似: -rwxr-xr-x  1 fdn fdn  946 8月  23 16:50 arduino 的可执行文件.
-./arduino  # 运行ide.</code></pre>
+<p>双击下载的exe文件进行安装:</p>
+<p>同意license:</p>
+<div class="figure">
+<img src="arduino_dev_tool_win_001_license.png" alt="同意license" />
+<p class="caption">同意license</p>
+</div>
+<p>选择安装options, 默认即可:</p>
+<div class="figure">
+<img src="arduino_dev_tool_win_002_options.png" alt="安装选项" />
+<p class="caption">安装选项</p>
+</div>
+<p>选择安装路径, 默认即可:</p>
+<div class="figure">
+<img src="arduino_dev_tool_win_003_path.png" alt="安装路径" />
+<p class="caption">安装路径</p>
+</div>
+<p>等待进度条完成:</p>
+<div class="figure">
+<img src="arduino_dev_tool_win_004_installing.png" alt="正在安装" />
+<p class="caption">正在安装</p>
+</div>
+<p>安装过程中如果出现如下对话框, 点击 &quot;仍然继续&quot;:</p>
+<div class="figure">
+<img src="arduino_dev_tool_win_005_continue.png" alt="仍然继续" />
+<p class="caption">仍然继续</p>
+</div>
+<p>安装完成, 点击 &quot;close&quot;:</p>
+<div class="figure">
+<img src="arduino_dev_tool_win_006_complete.png" alt="安装完成" />
+<p class="caption">安装完成</p>
+</div>
+<p>然后应该就可以看到桌面上出现了ide的启动图标:</p>
+<div class="figure">
+<img src="arduino_dev_tool_win_007_startup_icon.png" alt="启动图标" />
+<p class="caption">启动图标</p>
+</div>
+<p>现在就可以踏上Foolduino(Arduino)的创意之旅了.</p>
 <!-- vim:set tw=0:-->
 
 <div id="footer">

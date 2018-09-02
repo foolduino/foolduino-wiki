@@ -1,6 +1,6 @@
 <!---title:Foolduino知识库-首页(目录)-->
 <!---keywords:Arduino,创客,-->
-<!---date:2013.06.28; modification:2018.08.31-->
+<!---date:2013.06.28; modification:2018.09.02-->
 
 # 本站简介
 
@@ -12,6 +12,8 @@
 ## 入门教程
 
 ### 环境搭建
+
+[Windows环境下搭建Foolduino(Arduino)开发环境教程](wiki/foolduino/tutor/arduino_dev_tool_win.html)
 
 [Linux(Ubuntu)环境下搭建Foolduino(Arduino)开发环境教程](wiki/foolduino/tutor/arduino_dev_tool_linux.html)
 
