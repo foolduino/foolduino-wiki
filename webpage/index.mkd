@@ -17,6 +17,10 @@
 
 [Linux(Ubuntu)环境下搭建Foolduino(Arduino)开发环境教程](wiki/foolduino/tutor/arduino_dev_tool_linux.html)
 
+### 入门教程
+
+[https://www.w3cschool.cn/arduino/](https://www.w3cschool.cn/arduino/)
+
 
 ## 进阶教程
 
