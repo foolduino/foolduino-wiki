@@ -1,6 +1,6 @@
 <!---title:Linux(Ubuntu)环境下搭建Foolduino(Arduino)开发环境教程-->
 <!---keywords:-->
-<!---date:2018.08.26; modification:2018.08.31-->
+<!---date:2018.08.26; modification:2018.09.02-->
 
 # 下载IDE软件包
 
@@ -14,5 +14,17 @@
 
 [linux armIDE](../../../res/download/arduino-1.8.6-linuxarm.tar.xz)
 
+# 安装
+
+此处以64位linux为例.
+
+将下载下来的 arduino-1.8.6-linux64.tar.xz 解压到某个目录(随意指定). 例如:
+
+    mkdir ~/bin/
+    cd ~/bin
+    tar ~/arduino-1.8.6-linux64.tar.xz  # 此时在~/bin 下应该可以看到 arduino-1.8.6 文件夹
+    cd ~/bin/arduino-1.8.6
+    ls -lh     # 此时应该能看到类似: -rwxr-xr-x  1 fdn fdn  946 8月  23 16:50 arduino 的可执行文件.
+    ./arduino  # 运行ide.
 
 <!-- vim:set tw=0:-->
