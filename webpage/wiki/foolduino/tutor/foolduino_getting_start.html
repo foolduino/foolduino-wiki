@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<link rel="stylesheet" href="/style.css" type="text/css" />
+
+
+<title>Foolduino起步教程</title>
+
+</head>
+
+
+<body>
+<div id="wrapper">
+
+<div id="header">
+    <p class="header_titleline">Foolduino知识库</p>
+    <p class="header_subline"><a href="/index.html">首页</a></p>
+</div>
+<h1>Foolduino起步教程</h1>
+<p>date: 2018.09.02; modification:2018.09.03</p>
+
+ <!--if(title)-->
+
+<p>目录:</p>
+<div id="TOC">
+<ul>
+<li><a href="#foolduino核心板使用"><span class="toc-section-number">1</span> Foolduino核心板使用</a></li>
+<li><a href="#软件开发起步教程"><span class="toc-section-number">2</span> 软件开发起步教程</a><ul>
+<li><a href="#安装开发环境"><span class="toc-section-number">2.1</span> 安装开发环境</a></li>
+<li><a href="#烧写测试程序"><span class="toc-section-number">2.2</span> 烧写测试程序</a></li>
+<li><a href="#修改程序"><span class="toc-section-number">2.3</span> 修改程序</a></li>
+</ul></li>
+</ul>
+</div>
+ <!--if(toc)-->
+
+<!---title:Foolduino起步教程-->
+<!---keywords:-->
+<!---date:2018.09.02; modification:2018.09.03-->
+<h1 id="foolduino核心板使用"><span class="header-section-number">1</span> Foolduino核心板使用</h1>
+<p>Foolduino的基本版, 其实就是对于Arduino uno的一种硬件结构上的变形, 即将如下图的uno:</p>
+<div class="figure">
+<img src="foolduino_getting_start_uno_cut.jpg" alt="Arduino UNO" />
+<p class="caption">Arduino UNO</p>
+</div>
+<p>其中的红框标出的两部分, 变形(拆分)为:</p>
+<div class="figure">
+<img src="foolduino_getting_start_fdn_core_com.jpg" alt="Foolduino Core &amp; Com" />
+<p class="caption">Foolduino Core &amp; Com</p>
+</div>
+<p>所以其软件是与 Arduino UNO 通用的(包括bootloader以及用户程序). 这样就可以将用户的学习成本降到最低.</p>
+<p><strong>硬件使用注意事项</strong>: Foolduino的基本硬件板型都是这种双列结构. 为了节省所占空间, 该结构没有在物理上做防反查设计, 这就需要用户注意根据板上的标记来区分方向. Foolduino基本结构上一般会有两种标记可以用来区分(两者至少有其一):</p>
+<ul>
+<li>标记1: 如上图中右下角的红色框内的两个空焊盘, 这两个脚原本是core模块的A6, A7位置, 出厂默认是不焊接排针的. 可以根据这两个焊盘的位置来作为一种标记.</li>
+<li>标记2: 如上图中core模块的左上角的大圆点丝印, 如果PCB上空间允许, 就会有这个圆点作为标记.</li>
+</ul>
+<p>以上两种标记选其一进行方向对齐, 然后板对板堆叠插接即可. 如下图:</p>
+<!-- ![插接示意图](foolduino_getting_start_hd_connect.jpg) -->
+<div class="figure">
+<img src="foolduino_getting_start_hd_connect.png" alt="插接示意图" />
+<p class="caption">插接示意图</p>
+</div>
+<p>插接之后, 将下载线连到u口, 便可以进行软件开发了.</p>
+<h1 id="软件开发起步教程"><span class="header-section-number">2</span> 软件开发起步教程</h1>
+<h2 id="安装开发环境"><span class="header-section-number">2.1</span> 安装开发环境</h2>
+<p>如果您还没有Foolduino(Arduino)的IDE环境, 请参考:</p>
+<p><a href="wiki/foolduino/tutor/arduino_dev_tool_win.html">Windows环境下搭建Foolduino(Arduino)开发环境教程</a></p>
+<p><a href="wiki/foolduino/tutor/arduino_dev_tool_linux.html">Linux(Ubuntu)环境下搭建Foolduino(Arduino)开发环境教程</a></p>
+<h2 id="烧写测试程序"><span class="header-section-number">2.2</span> 烧写测试程序</h2>
+<p>一般软件开发的第一个程序, 都是注明的 &quot;Hello world&quot;, 但是Foolduino(或Arduino UNO)上都不自带屏幕. 如何进行 &quot;Hello world&quot; 测试呢?</p>
+<p>对于这个问题Foolduino(或Arduino UNO)采用了一种更加简单的方式: 板上都默认自带了一个LED灯(连接在Arduino 13引脚), 然后IDE中有一个Blink程序, 用来做LED灯的闪烁, 只需要下载便可运行.</p>
+<p>具体步骤如下:</p>
+<ol style="list-style-type: decimal">
+<li><p>打开IDE, 然后在菜单选择:</p>
+<pre><code>文件 -- 示例 -- 01.Basics -- Blink</code></pre></li>
+<li><p>默认程序代码不用修改, 然后选择:</p>
+<pre><code>工具 -- 开发板 -- Arduino/Genuino Uno</code></pre></li>
+<li><p>然后选择串口:</p>
+<pre><code>工具 -- 端口 -- /dev/ttyUSB0</code></pre>
+<p><strong>注意</strong>: 这里的端口选择在不同的电脑上, 会由于端口号不同而名称不同. 在windows上可能会是ComX(其中X为数字), 根据本机进行选择即可. 如果有多个串口不知如何选择, 可以试试拔下在插上串口, 看看那个端口号有变化.</p></li>
+<li><p>烧写程序到Foolduino开发板. 选择:</p>
+<pre><code>项目 -- 上传</code></pre></li>
+</ol>
+<p>然后会看到Arduino IDE的下方会打印一些编译与烧写的log, 如果您看到如下log:</p>
+<pre><code>avrdude: verifying ...
+avrdude: 928 bytes of flash verified
+
+avrdude done.  Thank you.</code></pre>
+<p>则说明Blink程序已经成功烧写到Foolduino板子上. 此时应该会能看到板子上的LED灯在闪烁.</p>
+<h2 id="修改程序"><span class="header-section-number">2.3</span> 修改程序</h2>
+<p>在刚刚的blink程序中, 可以看到最下方有类似如下代码:</p>
+<pre><code>void loop() {
+    digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+    delay(1000);                       // wait for a second
+    digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
+    delay(1000);                       // wait for a second
+}</code></pre>
+<p>修改 <code>delay(1000)</code> 的数值(单位为毫秒), 如改为500或2000(别改的太小, 太小了就变成常亮了). 然后重复上面的 <code>项目 -- 上传</code> 步骤. 此时应该可以看到LED灯闪烁的频率改变了.</p>
+<!-- vim:set tw=0:-->
+
+<div id="footer">
+    <p class="footer_titleline">Human knowledge belongs to the world</p>
+    <p class="footer_subline">Contact: foolduino@126.com</p>
+    <p class="footer_subline">声明: 本站如有侵权行为请及时通知至以上邮箱</p>
+</div>
+<!--Baidu tongji-->
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fcb5b32b959ab6deadbf7373854572a73' type='text/javascript'%3E%3C/script%3E"));
+</script> <!--Baidu tongji-->
+</div> <!--wrapper-->
+
+<!--SyntaxHighlighter-->
+<script type="text/javascript" src="/scripts/shCore.js"></script>
+<script type="text/javascript" src="/scripts/shBrushBash.js"></script>
+<script type="text/javascript" src="/scripts/shBrushPython.js"></script>
+<script type="text/javascript" src="/scripts/shBrushCpp.js"></script>
+<script type="text/javascript" src="/scripts/shBrushJScript.js"></script>
+<script type="text/javascript" src="/scripts/shBrushJava.js"></script>
+<script type="text/javascript" src="/scripts/shBrushXml.js"></script>
+<link type="text/css" rel="stylesheet" href="/styles/shCoreFadeToGrey.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+</body>
+</html>

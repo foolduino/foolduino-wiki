@@ -1,6 +1,6 @@
 <!---title:Foolduino知识库-首页(目录)-->
 <!---keywords:Arduino,创客,-->
-<!---date:2013.06.28; modification:2018.09.02-->
+<!---date:2013.06.28; modification:2018.09.03-->
 
 # 本站简介
 
@@ -17,13 +17,22 @@
 
 [Linux(Ubuntu)环境下搭建Foolduino(Arduino)开发环境教程](wiki/foolduino/tutor/arduino_dev_tool_linux.html)
 
+
 ### 入门教程
 
-[https://www.w3cschool.cn/arduino/](https://www.w3cschool.cn/arduino/)
+由于 w3cschool 的Arduino教程已经写的挺全面了, 所以在此就不展开描述完整的Arduino入门教程了,
+仅就Foolduino的特殊之处进行一些起步说明. 之后给出 w3cschool 的教程链接.
+
+[Foolduino起步教程](wiki/foolduino/tutor/foolduino_getting_start.html)
+
+传送门:
+
+[w3cschool.cn的Arduino教程](https://www.w3cschool.cn/Arduino/)
 
 
 ## 进阶教程
 
+建设中...
 
 # Foolduino(Arduino)参考手册
 
