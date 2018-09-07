@@ -1,6 +1,6 @@
 <!---title:Foolduino起步教程-->
 <!---keywords:-->
-<!---date:2018.09.02; modification:2018.09.03-->
+<!---date:2018.09.02; modification:2018.09.07-->
 
 # Foolduino核心板使用
 
@@ -33,9 +33,9 @@ Foolduino的基本版, 其实就是对于Arduino uno的一种硬件结构上的�
 
 如果您还没有Foolduino(Arduino)的IDE环境, 请参考:
 
-[Windows环境下搭建Foolduino(Arduino)开发环境教程](wiki/foolduino/tutor/arduino_dev_tool_win.html)
+[Windows环境下搭建Foolduino(Arduino)开发环境教程](./arduino_dev_tool_win.html)
 
-[Linux(Ubuntu)环境下搭建Foolduino(Arduino)开发环境教程](wiki/foolduino/tutor/arduino_dev_tool_linux.html)
+[Linux(Ubuntu)环境下搭建Foolduino(Arduino)开发环境教程](./arduino_dev_tool_linux.html)
 
 ## 烧写测试程序
 
